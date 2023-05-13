@@ -57,3 +57,21 @@ function addNew(e) {
 }
 
 btn_them.addEventListener("click", addNew)
+
+function timkiem(e){
+    e.preventDefault();
+    const input = ip_timkiem.value;
+    const array = user.filter(string=>{
+        return string==input;
+    })
+    tbody.innerHTML = array.map(function (item) {
+        return `
+            <tr>
+                <td>${item.ten}</td>
+                <td>${item.sdt}</td>
+            </tr>
+        
+        `
+    }).join("")
+}
+btn_tim.addEventListener("click", timkiem)
