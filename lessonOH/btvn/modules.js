@@ -10,7 +10,7 @@ let sum = 0;
      return  tb=sum / A.length;
 }
  //b
-export const b = () =>{
+export const b = (array) =>{
     A.sort(function(a,b){
         if (a > b) return 1;
         if (a < b) return -1;
@@ -20,7 +20,7 @@ export const b = () =>{
     console.log(A);
 }
  //c
-export const c = () =>{
+export const c = (array) =>{
     let tongsoduong = 0;
 for(let i=0;i<A.length;i++){
     if(A[i]>0){
@@ -30,7 +30,7 @@ for(let i=0;i<A.length;i++){
 console.log(tongsoduong);
 }
 //d
-export const  d = () =>{
+export const  d = (array) =>{
     let arrle = A.filter((e)=>e%2!==0);
 let tongsole = 0 ;
 for(let i =0 ;i<arrle.length;i++){
@@ -39,7 +39,7 @@ for(let i =0 ;i<arrle.length;i++){
 console.log(tongsole);
 }
 //e
-export const e =() => {
+export const e =(array) => {
     A.sort(function(a,b){
         if (a > b) return 1;
         if (a < b) return -1;
